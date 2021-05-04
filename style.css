@@ -46,6 +46,25 @@ ul li a {
     color: #fff;
 }
 
+ul li a:hover {
+    font-size: medium;
+}
+
+.button:hover, .reward:hover {
+    cursor: pointer;
+    background-color: hsl(176, 72%, 28%);
+}
+
+.out-of-stock:hover {
+    cursor: not-allowed;
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+}
+
+input.bookmark:active {
+    color: hsl(176, 72%, 28%);
+}
+
 div.first {
     width: 50%;
     background-color: #fff;
@@ -131,24 +150,6 @@ div.backed {
     color: hsl(176, 50%, 47%);
 }
 
-/* p.a {
-    position: absolute;
-    top: 610px;
-    left: 300px;
-} */
-
-p.b {
-    /* position: absolute;
-    top: 610px;
-    left: 550px; */
-}
-
-/*p.c {
-    position: absolute;
-    top: 610px;
-    left: 850px;
-} */
-
 div.about {
     margin-top: 20px;
     width: 50%;
@@ -228,4 +229,158 @@ input.reward {
 input.out-of-stock {
     background-color: hsl(0, 0%, 48%);
     border: 1px solid hsl(0, 0%, 48%);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #d3d3d3;
+    }
+
+    header.head {
+        background-image: url(./images/image-hero-mobile.jpg);
+        padding: 0;
+        margin: 0;
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    h1.logo {
+        line-height: 80px;
+        margin-left: 30px;
+        font-size: medium;
+        color: #fff;
+    }
+
+    ul {
+        margin-right: 50px;
+        display: none;
+    }
+    
+    ul li {
+        margin-top: -50px;
+        list-style: none;
+        height: 80px;
+        text-align: right;
+        display: inline;
+        float: right;
+        font-size: xx-small;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        color: #fff;
+    }
+
+    a.icon {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    div.first {
+        width: 80%;
+        border-radius: 7px;
+        margin-left: 10%;
+        padding: 50px 40px;
+        margin-top: -60px;
+    }
+    
+    img.mastercraft-logo {
+        position: absolute;
+        left: 42%;
+        top: 260px;
+    }
+
+    input.button {
+        width: 160px;
+    }
+    
+    input.bookmark {
+        display: none;
+    }
+    
+    img.bookmark-icon {
+        position: absolute;
+        top: 525px;
+        right: 72px;
+    }
+
+    div.backed {
+        width: 80%; 
+        margin-left: 10%;
+    }
+    
+    div.about {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    p.option {
+        font-weight: 900;
+        font-size: 13px;
+        margin-bottom: 15px;
+        margin-top: -20px;
+    }
+    
+    p.amount {
+        color: hsl(176, 50%, 47%);
+        float: none;
+        font-size: 13px;
+        margin-top: 2px;
+        margin-bottom: 20px;
+    }
+
+    div.bamboo, div.black-edition, div.mahogany-edition{
+        padding: 40px 30px;
+    }
+
+    p.number-left {
+        margin-top: 30px;
+    }
+    
+    span.left {
+        font-size: xx-small;
+        font-weight: 100;
+        color: hsl(0, 0%, 48%);
+    }
+    
+    input.reward {
+        width: 130px;
+        padding: 10px 10px;
+        font-weight: 300px;
+        float: none;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+    
+    input.out-of-stock {
+        background-color: hsl(0, 0%, 48%);
+        border: 1px solid hsl(0, 0%, 48%);
+    }
 }
